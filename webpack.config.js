@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // Importa el plugin
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -7,6 +7,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true, // Limpia la carpeta de salida antes de cada compilación
+    publicPath: '/', // Asegura que los recursos se sirvan desde la raíz
   },
   module: {
     rules: [
