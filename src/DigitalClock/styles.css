@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1c;
+    font-family: 'Courier New', Courier, monospace; /* Fuente de fondo */
+}
+
+
+.clock-container {
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+    gap: 8px; /* Espacio entre los dígitos */
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    
+}
+
+.digit {
+    width: 80px; /* Ajusta el ancho de los dígitos */
+    height: 100px; /* Ajusta la altura de los dígitos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #0f0;
+    font-size: 4rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Press Start 2P', cursive; /* Aplicar la fuente Pixelify Sans */
+}
