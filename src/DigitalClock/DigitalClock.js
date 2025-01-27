@@ -20,7 +20,7 @@ const DigitalClock = () => {
     const seconds = formatNumber(time.getSeconds());
 
     return (
-        <div className="clock-container" style={{ flexDirection: width < 600 ? 'column' : 'row' }}>
+        <div className="clock-container" style={{ flexDirection: width < 800 ? 'column' : 'row' }}>
             <div className="digit">{hours[0]}</div>
             <div className="digit">{hours[1]}</div>
             <div className="digit">:</div> {/* Dos puntos */}
